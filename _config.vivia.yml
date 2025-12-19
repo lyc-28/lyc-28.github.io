@@ -23,7 +23,7 @@ hue: 240                          # The hue of the theme color (e.g. red: 0, ora
 
 # Personal info
 avatar: /img/avatar.png             # Path to the avatar image relative to /source
-author: lyc
+author: lyc、wj
 subtitle: '终点未至，脚步未停'
 links:
   - name: Bilibili
@@ -56,22 +56,29 @@ comment:
     enable: false         # Enable Valine comment system
     appId: 
     appKey: 
-    placeholder: Just go go
+    placeholder: 
     pageSize: 10
     highlight: true
     serverURLs: 
+    requiredFields: 
     # Other supported parameters can be added here if needed
     # Visit https://valine.js.org/configuration.html for more details
   twikoo:
     enable: false          # Enable Twikoo comment system
-    envID:
+    envID: 
     region:
     path: location.pathname
     lang:
     # See also: https://github.com/imaegoo/twikoo
   waline:
-    enable: false          # Enable Waline comment system
-    serverURL: 
+    enable: true
+    serverURL: https://lblog.zeabur.app/  # <--- 填你刚才在 Zeabur 生成的网址
+    placeholder: 请随便说两句（无需登录）...      # 提示语
+    avatar: robohash                           # 头像风格
+    pageSize: 10
+    visitor: true                              # 统计阅读量
+    requiredMeta: ['nick']                     # 必填项：只填昵称即可
+    # requiredMeta: ['nick', 'mail']           # 如果你想让邮箱也必填就用这一行
 
 #Analytics
 gauges_analytics: false
